@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Todo from '../../components/Todo/Todo';
 import TodoDetail from '../../components/TodoDetail/TodoDetail';
+import NewTodo from './NewTodo/NewTodo';
 import './TodoList.css';
 
 class TodoList extends Component {
@@ -45,6 +46,7 @@ class TodoList extends Component {
         <div className="title">{this.props.title}</div>
         <div className="todos">{todos}</div>
         {todo}
+        <NewTodo />
       </div>
     )
   }
