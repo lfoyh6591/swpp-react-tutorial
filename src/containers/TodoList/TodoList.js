@@ -33,9 +33,9 @@ class TodoList extends Component {
         />);
     });
 
-    let todo = null;
+    let todoDetail = null;
     if (this.state.selectedTodo) {
-      todo = <TodoDetail
+      todoDetail = <TodoDetail
         title={this.state.selectedTodo.title}
         content={this.state.selectedTodo.content}
       />
@@ -44,7 +44,7 @@ class TodoList extends Component {
       <div className="TodoList">
         <div className="title">{this.props.title}</div>
         <div className="todos">{todos}</div>
-        {todo}
+        {todoDetail}
       </div>
     )
   }
